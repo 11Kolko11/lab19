@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Box, CssBaseline } from '@mui/material';
 import './App.css';
 
@@ -11,7 +11,7 @@ import NotFound from './pages/NotFound';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <CssBaseline />
       <Box className="App" sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <Header />
@@ -28,6 +28,6 @@ export default function App() {
 
         <Footer />
       </Box>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
